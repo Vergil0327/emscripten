@@ -5703,7 +5703,7 @@ return malloc(size);
 
   @no_windows('./configure scripts dont to run on windows.')
   def test_freetype(self):
-    assert 'asm2g' in test_modes
+    assert 'asm2g' in core_test_modes
     if self.run_name == 'asm2g':
       # flip for some more coverage here
       self.set_setting('ALIASING_FUNCTION_POINTERS', 1 - self.get_setting('ALIASING_FUNCTION_POINTERS'))
